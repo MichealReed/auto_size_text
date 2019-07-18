@@ -375,7 +375,7 @@ class _AutoSizeTextState extends State<AutoSizeText> {
         textScaleFactor: scale ?? 1,
         maxLines: words.length,
         locale: widget.locale,
-        strutStyle: widget.strutStyle,
+        //strutStyle: widget.strutStyle,
       );
 
       wordWrapTp.layout(maxWidth: constraints.maxWidth);
@@ -393,7 +393,7 @@ class _AutoSizeTextState extends State<AutoSizeText> {
       textScaleFactor: scale ?? 1,
       maxLines: maxLines,
       locale: widget.locale,
-      strutStyle: widget.strutStyle,
+      //strutStyle: widget.strutStyle,
     );
 
     tp.layout(maxWidth: constraints.maxWidth);
@@ -408,7 +408,7 @@ class _AutoSizeTextState extends State<AutoSizeText> {
       return Text(
         widget.data,
         style: style.copyWith(fontSize: fontSize),
-        strutStyle: widget.strutStyle,
+        //strutStyle: widget.strutStyle,
         textAlign: widget.textAlign,
         textDirection: widget.textDirection,
         locale: widget.locale,
@@ -422,7 +422,7 @@ class _AutoSizeTextState extends State<AutoSizeText> {
       return Text.rich(
         widget.textSpan,
         style: style,
-        strutStyle: widget.strutStyle,
+        //strutStyle: widget.strutStyle,
         textAlign: widget.textAlign,
         textDirection: widget.textDirection,
         locale: widget.locale,
